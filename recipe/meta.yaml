@@ -1,5 +1,5 @@
 {% set name = "pytest-recording" %}
-{% set version = "0.12.0" %}
+{% set version = "0.12.1" %}
 
 
 package:
@@ -8,7 +8,7 @@ package:
 
 source:
   url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/pytest-recording-{{ version }}.tar.gz
-  sha256: 9039bf488f80c016055ffd039a91e33b1e89f3ee2ee0005c0bbce298fd417ee1
+  sha256: 0d1f36d10dea5090cab8ecd230e5dc937c97b9fed193874b330d2926ddea028f
 
 build:
   number: 0
