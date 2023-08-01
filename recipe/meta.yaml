@@ -16,11 +16,10 @@ build:
   script: {{ PYTHON }} -m pip install . -vv
 
 requirements:
-  build:
-    - hatchling
   host:
     - pip
     - python >=3.7
+    - hatchling
   run:
     - attrs
     - pytest >=3.5.0
