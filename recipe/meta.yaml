@@ -1,5 +1,5 @@
 {% set name = "pytest-recording" %}
-{% set version = "0.13.2" %}
+{% set version = "0.13.4" %}
 
 
 package:
@@ -7,8 +7,8 @@ package:
   version: {{ version }}
 
 source:
-  url: https://pypi.io/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
-  sha256: 000c3babbb466681457fd65b723427c1779a0c6c17d9e381c3142a701e124877
+  url: https://pypi.org/packages/source/{{ name[0] }}/{{ name }}/{{ name.replace('-', '_') }}-{{ version }}.tar.gz
+  sha256: 568d64b2a85992eec4ae0a419c855d5fd96782c5fb016784d86f18053792768c
 
 build:
   number: 0
