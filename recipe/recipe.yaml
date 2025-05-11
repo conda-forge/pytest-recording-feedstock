@@ -1,0 +1,47 @@
+schema_version: 1
+
+context:
+  name: pytest-recording
+  version: 0.13.2
+
+package:
+  name: ${{ name|lower }}
+  version: ${{ version }}
+
+source:
+  url: https://pypi.io/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
+  sha256: 000c3babbb466681457fd65b723427c1779a0c6c17d9e381c3142a701e124877
+
+build:
+  number: 1
+  noarch: python
+  script: ${{ PYTHON }} -m pip install . -vv
+
+requirements:
+  host:
+    - pip
+    - python >=3.7
+    - hatchling
+  run:
+    - attrs
+    - pytest >=3.5.0
+    - python >=3.7
+    - vcrpy >=2.0.1
+
+tests:
+  - python:
+      imports:
+        - pytest_recording
+      pip_check: true
+
+      python_version: ${{ python_min }}.*
+about:
+  summary: A pytest plugin that allows you recording of network interactions via VCR.py
+  license: MIT
+  license_file: LICENSE
+  homepage: https://github.com/kiwicom/pytest-recording
+  repository: https://github.com/kiwicom/pytest-recording
+
+extra:
+  recipe-maintainers:
+    - ruben-arts
