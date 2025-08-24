@@ -4,7 +4,6 @@ schema_version: 1
 context:
   name: pytest-recording
   version: 0.13.4
-  python_min: "3.9"
 
 package:
   name: ${{ name|lower }}
