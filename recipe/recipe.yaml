@@ -27,6 +27,7 @@ requirements:
     - attrs
     - pytest >=3.5.0
     - python >=${{ python_min }}
+    - urllib3 >=2.5.0
     - vcrpy >=2.0.1
 
 tests:
