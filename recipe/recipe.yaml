@@ -35,6 +35,9 @@ tests:
         - pytest_recording
       pip_check: true
       python_version: ${{ python_min }}.*
+  - requirements:
+      run:
+        - urilib3 >=2.5.0
 
 about:
   summary: A pytest plugin that allows you recording of network interactions via VCR.py
