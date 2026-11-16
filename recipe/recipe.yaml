@@ -3,7 +3,7 @@ schema_version: 1
 
 context:
   name: pytest-recording
-  version: "0.14.0"
+  version: "0.15.0"
 
 package:
   name: ${{ name|lower }}
@@ -11,7 +11,7 @@ package:
 
 source:
   url: https://pypi.org/packages/source/${{ name[0] }}/${{ name }}/${{ name | replace('-', '_') }}-${{ version }}.tar.gz
-  sha256: 175f62a71da36c0a019dbee47f92b9fa4c72dea18e215da1488282e8d4d08b35
+  sha256: af96135d60cad55836192d8e2e4186d00b4712035ead2116790956282c5b0feb
 
 build:
   number: 0
